@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary_colour: rgb(233, 240, 233);
+    --colour: green;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    margin: 0;
+}
+.btn{
+    text-align: left;
+    padding: 10px;
+    color: var(--colour);
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(225, 233, 223);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration:underline;
+    margin: 1rem;
+}
+.btn:hover{
+    background-color: var(--colour);
+    color: #fff;
+    transition: 0.8s;
+}
+
+/*  nav styling  */
+    nav li{
+        list-style: none;
+        padding: 5px 14px;
+    }
+    nav ul a{
+        text-decoration: none;
+        color: var(--colour);
+        text-transform: uppercase;
+        padding: 10px;
+            color: var(--colour);
+    }
+    nav ul li a:hover{
+        background-color: #fff;
+        color: var(--colour); 
+        text-decoration: underline;
+        transition: 1.2s ease;
+    }
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(63, 100, 63,0.3);
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0 0 0 0.2 ) ;
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.first{
+background-image: url("./images/football_one.jpg") ;
+background-size: auto 100%;
+background-color: rgb(63, 100, 63);
+background-blend-mode: darken;
+color: #fff;
+height: 100vh;
+}
+.first .container{
+    padding: 2rem;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first h1{
+    font-size: 3.5rem;
+}
+
+.first p{
+    color: rgb(248, 244, 244);
+    padding-bottom: 1rem;
+}
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;;
+}
+.round_card{
+    text-align: center;
+    background-color: rgb(76, 128, 76);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.round_card a{
+    text-decoration: none;
+    color: #fff;
+}
+.round_card a:hover{
+    padding-bottom: 5px;
+    text-decoration: underline;
+    transition: 0.8s ;
+}
+
+.second .container{
+    padding: 2.5rem;
+}
+
+.second{
+    background-color: var(--primary_colour);
+    height: 55vh;
+    text-align:center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    position: relative;
+    top: -150px;
+    margin: 2rem;
+}
+.card h3{
+    margin: 0.5rem;
+    color: var(--colour);
+}
+.card{
+   padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0 0 0 0.2 ) ;
+}
+ .facilities, .admission{
+    position: relative;
+  bottom: 50px;
+}
+.third{
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: var(--primary_colour);
+    background-color: rgba(63, 100, 63,0.3);
+}
+.fourth{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colour);
+     padding: 1rem;
+}
+
+.fourth .container{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+
+}
+.fourth figure{
+    padding: 1rem;
+    
+}
+.fourth figcaption, .fourth h2{
+    text-align: center;
+}
+.fourth img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: auto;
+}
+.last{
+    background-image: url("./images/contact.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+form{
+    background-color: #fff;
+    max-width: 400px;
+    padding: 2rem ;
+    }
+   
+form h1{
+    text-align: center;
+}
+
+.last input, .last textarea{
+    display: block;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.last label,.last input, .last textarea{
+  padding-top: 1rem;
+}
+
+.last .check{
+    display: inline;
+    width: auto;
+}
+
+form .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: var(--colour);
+    text-decoration: none;
+}
+form .btn:hover{
+    color: var(--colour) ;
+    background-color: #fff;
+    border-bottom: 2px solid var(--colour) ;
+    border-radius: 0;
+    transition: 1s;
+}
+.last aside{
+    color: #fff;
+    line-height: 2;
+}
+.last aside h3{
+    color: var(--colour);
+}
+form a{
+    text-decoration: none;
+    color: var(--colour);
+    border-bottom: 1px solid var(--colour);
+}
+footer{
+    padding: 1rem;
+    text-align: center;
+    color: var(--colour);
+    overflow: auto;
+    background-color: rgba(63, 100, 63,0.3);
+}
+
+footer a{
+    color: var(--colour);
+    margin: 10px;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    .grid{
+      grid-template-columns: repeat(3,1fr);
+      }
+      .card{
+        top: 0;
+      }
+      .cards{
+        
+        grid-template-columns: repeat(2,1fr);
+      }
+     
+  }
+@media screen and (max-width:700px) {
+
+    .first h1 {
+        font-size: 2.5rem;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .btn{
+        background-color: var(--colour);
+        color: #fff;
+    }
+    .btn:hover{
+        border-bottom: 1px solid var(--colour);
+        background-color: #fff;
+        color: var(--colour);
+        transition: 0.8s;
+    }
+    .cards{
+        
+        grid-template-columns: repeat(1,1fr);
+      }
+    
+    .last{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
+@media screen and (max-width:950px) {
+    .menu{
+        display: block ;
+        position: absolute;
+        background-color:rgb(63, 100, 63); 
+        height: 100%;
+        text-align: center;
+        width: 100%;
+        line-height: 100px;
+        z-index: 2;
+        left: -100%;
+        position: fixed;
+    }
+    nav ul a{
+            color: #fff;
+    }
+    .hamburger{
+        display: block;
+    }
+    input[type=checkbox]:checked ~ .menu{ 
+        left: 0;
+        transition: 1s ease-in-out;
+    }
+}
